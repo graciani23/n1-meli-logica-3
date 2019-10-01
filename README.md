@@ -34,3 +34,26 @@ muito utilizados no dia-a-dia de pessoas desenvolvedoras.
 
 Alguns exemplos: 
 concat, pop, join, push, split, splice, reverse, slice, indexof, typeof, trim... 
+
+# Aula 2
+
+## Array bidimensionais 
+São arrays que contém arrays. 
+ 
+Arrays com duas dimensões costumam ser utilizados para representar tabelas de valores que consistem nas informações dispostas em *linhas* e *colunas*. Para identificar um elemento da tabela particular, devem ser especificados dois índices. Por convenção, o primeiro identifica a linha do elemento e o segundo, sua coluna.
+```
+const array = [
+    ['apple', 'orange', 'pear'],
+    ['maça', 'laranja', 'pera'],
+    ['cookies', 'cake', 'muffins', 'pie']
+];
+
+console.log(array[0][0]) // logs 'apple'
+```
+
+Arrays multidimensionais
+```
+const x = [1,[2,3], [4,[5,[6,7,8]]], [9,[10,11,[12,13]]]];
+
+console.log(x[2][1][1])  // logs [6, 7, 8]
+```  
