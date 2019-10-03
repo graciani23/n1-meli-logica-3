@@ -64,7 +64,7 @@
 
 // const dados = [["1", 2, 4, 5], [2, 3, "56"], [23, 23, "23"]]
 // function isNumber() {
-    
+
 // }
 
 // 5 - Agora recebemos, alguns valores em string. Porém a nossa tabela no banco só aceita
@@ -89,30 +89,30 @@
 // }
 // console.log(NovoDados)
 
-const dados = [
-  ["Antonia Maria", "ar@gol.com", "Engenheira"],
-  ["Joana Maranhão", "ar@gol.com", "Engenheira de software"],
-  ["Juliana Paes", "argh@gol.com", "Advogada"],
-  ["mariana DA SILVA", "mariana@gmail.com", "MEDICA"],
-  ["MARINA BATISTA", "marina@gol.com", "professora"],
-  ["Antonia Maria", "ari@gol.com", "cientista"]
-]
-let position = []
-for (let i=0; i<dados.length; i++) {
-    for (let j=0; j<dados[i].length; j++) {
-        for (let k=0; k<dados[j].length; k++) {
-            if(dados[i][j][k] === dados[i][j][k].toLowerCase()) {
-                console.log(`${dados[i][j][k]} já é um Lower`)
-            } else {
-                console.log(`${dados[i][j][k]} não é um Lower`)
-            }
-            if (dados[i][j][k] !== dados[i][j][k].toLowerCase()) {
-                position = dados.toString().toLowerCase().split()
-            }
-        }
-        
-    }
-} console.log(position)
+// const dados = [
+//   ["Antonia Maria", "ar@gol.com", "Engenheira"],
+//   ["Joana Maranhão", "ar@gol.com", "Engenheira de software"],
+//   ["Juliana Paes", "argh@gol.com", "Advogada"],
+//   ["mariana DA SILVA", "mariana@gmail.com", "MEDICA"],
+//   ["MARINA BATISTA", "marina@gol.com", "professora"],
+//   ["Antonia Maria", "ari@gol.com", "cientista"]
+// ]
+// let position = []
+// for (let i=0; i<dados.length; i++) {
+//     for (let j=0; j<dados[i].length; j++) {
+//         for (let k=0; k<dados[j].length; k++) {
+//             if(dados[i][j][k] === dados[i][j][k].toLowerCase()) {
+//                 console.log(`${dados[i][j][k]} já é um Lower`)
+//             } else {
+//                 console.log(`${dados[i][j][k]} não é um Lower`)
+//             }
+//             if (dados[i][j][k] !== dados[i][j][k].toLowerCase()) {
+//                 position = dados.toString().toLowerCase().split()
+//             }
+//         }
+
+//     }
+// } console.log(position)
 
 // 6 - Printe no console os números que são múltiplos de 3.
 //  - os que são multiplos de 3 e 5.
@@ -153,32 +153,33 @@ for (let i=0; i<dados.length; i++) {
 
 
 
-// 7- const cacaPalavras = [
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
-//   ["a", "w", "e", "l", "e", "f", "a", "n", "t", "e"],
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
-//   ["c", "a", "s", "a", "t", "y", "u", "u", "i", "r"],
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
-//   ["a", "w", "e", "r", "e", "d", "e", "u", "i", "r"],
-//   ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"]
+// const cacaPalavras = [
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
+//     ["a", "w", "e", "l", "e", "f", "a", "n", "t", "e"],
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
+//     ["c", "a", "s", "a", "t", "y", "u", "u", "i", "r"],
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"],
+//     ["a", "w", "e", "r", "e", "d", "e", "u", "i", "r"],
+//     ["a", "w", "e", "r", "t", "y", "u", "u", "i", "r"]
 // ]
 
+
 // const palavras = ["elefante", "casa", "rede"]
-// function encontrarPalavras(cacaPalavras, palavras) {
-//     for (let i=0; i< cacaPalavras.length; i++) {
-//         for (let j=0; j<palavras.length; j++) {
-//             if (cacaPalavras.indexof(palavras[j]) === -1) {
-//                 console.log('Palavra encontrada')
-//             } else {
-//                 console.log('palavra não encontrada')
-//             }
-//         }
+
+
+// for (let i = 0; i < cacaPalavras.length; i++) {
+//     cacaPalavras[i] = cacaPalavras[i].join("")
+//     for (let j = 0; j < palavras.length; j++) {
+//         if (cacaPalavras[i].indexof(palavras[j]) > -1) {
+//             console.log(`Palavra ${palavras[j]} está na linha ${i + 1} e começa na coluna ${cacaPalavras[i].indexOf(palavras[j] + 1)} encontrada`)
+//         } 
 //     }
 // }
+
 
 
 // ache as palavras da array palavras na array cacaPalavras e diga em qual linha e em qual coluna
