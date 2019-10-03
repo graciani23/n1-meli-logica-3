@@ -21,9 +21,9 @@
 // animal.nome = 'gato'
 // animal.cor_de_pelo = 'preto-e-branco'
 
-// for (const item in animal) {
-//     console.log(item)
-// }
+// // for (const item in animal) {
+// //     console.log(item)
+// // }
 
 // for (const item in animal) {
 //     console.log(item, animal[item])
@@ -85,18 +85,17 @@ pokemon.voar = function() {
 }
 pokemon.voar()
 
-console.log(pokemon)
 // 5.
 // Adicione um método chamado
 // `action` ao seu pokemon
 // que retorna randomicamente uma
 // das Strings "FIGHT", "BAG" ou "RUN".
 pokemon.action = function() {
-    const acoes = ['fight', 'bag', 'run']
+    const acoes = ['Fight', 'Bag', 'Run']
     let randomItem = acoes[Math.floor(Math.random()*acoes.length)];
     console.log(`A ação é ${randomItem}`)
 }
-pokemon.action()
+
 
 // 6.
 // Adicione um método chamado
@@ -104,15 +103,28 @@ pokemon.action()
 // no console "O que o  < > vai fazer?" e
 // retorna o resultado do metodo
 // `acao`.
+pokemon.pergunta = function() {
+    console.log(`O que o ${pokemon.nome} vai fazer?`)
+    return pokemon.action()
+}
+pokemon.pergunta()
 
 // 7.
 // Printe todas as propriedades
 // do seu pokemon no console.
-
+console.log(Object.keys(pokemon))
 // 8.
 // Printe todas as propriedades
 // e seus respectivos valores no
 // console no seguinte formato:
 // <propriedade>: <valor
+for (const item in pokemon) {
+    console.log(item, pokemon[item])
+}
 
 //9 Faça uma função construtora de pokemon
+
+
+
+
+
