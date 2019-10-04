@@ -103,6 +103,12 @@ pokemon.action = function() {
 // no console "O que o  < > vai fazer?" e
 // retorna o resultado do metodo
 // `acao`.
+
+for (const key in pokemo) {
+    console.log(`Chave:${key}| valor:${pokemon[key]}`)
+}
+
+
 pokemon.pergunta = function() {
     console.log(`O que o ${pokemon.nome} vai fazer?`)
     return pokemon.action()
@@ -123,8 +129,45 @@ for (const item in pokemon) {
 }
 
 //9 Faça uma função construtora de pokemon
+//função construtora
+function Pokemon(nome, nomeJapa, evolucao) {
+    this.nome = nome
+    this.nomeJapa = nomeJapa
+    this.evolucao = evolucao
+}
 
+const pokemon1 = new Pokemon('charmander', 'Hitokage', 'ovo')
+const pokemon2 = new Pokemon('Pikachu', 'Hitokage', 'ovo')
 
+console.log(Pokemon)
 
+const pokes = []
+pokes.push(pokemon1, pokemon2)
+console.log(pokes)
 
+Pokemon.prototype.jogarBola = function() {
+    console
+}
 
+// Array.prototype
+// String.prototype.split = function() {
+//     console.log("Não vou splitar nada")
+// }
+
+const complex = [
+    {user:234, name: 'Marcia', idade:40, hobbies: ['dançar', 'comer', 'falar']},
+    {user:235, name: 'Lorena', idade:20, hobbies: ['dançar', 'assistir tv', 'estudar']},
+    {user:236, name: 'Patricia', idade:24, hobbies: ['correr', 'acampar', 'surfar']},
+    {user:237, name: 'Mariana', idade:15, hobbies: ['skate', 'bicicleta', 'break dance']},
+    {user:238, name: 'Isis', idade:34, hobbies: ['ler', 'escrever', 'discutir']},
+    {user:239, name: 'Pietra', idade:23, hobbies: ['jogar dominó', 'sinuca', 'cartas']}
+]
+console.log(complex[complex.length-1].name)
+
+const arr = [2, 4, 7, 9, 9].map(function(item){
+    console.log(item + 3)
+}) 
+
+const palavras = ['oi', 'ola', 'hello'].map(function(item) {
+    console.log(item.toUpperCase())
+})

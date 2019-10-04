@@ -184,6 +184,7 @@ const complex = [
     {user:239, name: 'Pietra', idade:23, hobbies: ['jogar dominó', 'sinuca', 'cartas']}
 ]
 ````
+
 ### Extra: 
 
 Map, filter, Reduce, forEach 
