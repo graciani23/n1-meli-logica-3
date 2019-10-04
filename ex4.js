@@ -62,5 +62,14 @@ for (const item of terrenos) {
 }
 
 // 10 - Crie uma função que vai receber a array de objetos e vai ordenar a lista do mais barato para o mais caro.
+
+function ordenaTerrenos(arrTerrenos) {
+    const ordenados = arrTerrenos.sort(function(a, b) {
+        return a.preco - b.preco
+    })
+    console.log(ordenados)
+}
+ordenaTerrenos(terrenos)
 // 11 - Crie uma função que Imprima o mais barato
+
 // 12 - Crie uma função que Imprima o mais caro.
