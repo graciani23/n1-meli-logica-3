@@ -24,10 +24,28 @@ function nasceuEmSP() {
   return isChecked
 }
 
+// função construtora
+function Aluna(nome, dataDeNasc, SP, id) {
+  this.nome = nome
+  this.dataDeNasc = dataDeNasc
+  this.SP = SP
+  this.id = id
+}
+ console.log(nome.value, dataDeNasc.value, nasceuEmSP())
+
 botaoEnviar.addEventListener("click", function(e) {
   e.preventDefault()
+  criarAluna(nome.value, dataDeNasc.value, nasceuEmSP())
   //estamos recevendo aqui os dados
-  console.log(nome.value, dataDeNasc.value, nasceuEmSP())
+ 
+  const alunas = []
+  let id = 0;
+  function criarAluna(nome, data, sp) {
+    alunas.push( new Aluna(nome, dataDeNasc, SP, ++id))
+    console.log(alunas)
+  }
+
+
 })
 
 //  btnMostrar.addEventListener("click", funcao para mostrar alunas)
