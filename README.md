@@ -146,6 +146,23 @@ __Em um método__ 'this' faz referencia ao proprio objeto
 
 #### Função Construtora
 
+Um construtor nada mais é do que uma função. Ela pode ser executada como uma função ou pode ser utilizada para __instanciar__ um objeto utilizando a palavra reservada new.
+
+```
+function Categoria(nome) {
+    this.nome = nome;
+}
+
+const categoria = new Categoria('Livros');
+```
+
+__Ao executar a função Categoria com new estamos fazendo quatro coisas:__
+
+* criamos um novo objeto JavaScript ({});
+* definimos o construtor do objeto categoria como Categoria – definindo também o tipo dele (retornado no instanceof);
+* definimos o protótipo do objeto categoria como Categoria.prototype;
+* executamos a função Categoria dentro do escopo do novo objeto, criando assim uma nova instância.
+
 ```
 function Pessoa(nome, age, profissao) {
   this.nome = nome;
@@ -159,7 +176,7 @@ Pessoa.prototype.falar = function() {
 const friend = new Pessoa('laura', 28, 'desenvolvedora');
 
 ```
-
+Também existe a palavra chave class 
 ```
 class Pessoa {
     constructor(nome, idade){
@@ -193,7 +210,8 @@ Map, filter, Reduce, forEach
 - https://medium.com/@programadriano/javascript-conhecendo-map-filter-e-reduce-ce072d8f0ec5]
 - https://clovisdasilvaneto.github.io/explorando-javascript-filter-reduce-map-every-some-e-foreach/
 
- JSON  
+__JSON (JavaScript Object Notation)__
+ -  é um modelo para armazenamento e transmissão de informações no formato texto.
 
 #### Links: 
 - W3Schools Métodos de Arrays - https://www.w3schools.com/js/js_array_methods.asp
@@ -201,3 +219,6 @@ Map, filter, Reduce, forEach
 - MDN Arrays - https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 - MDN Objetos - https://developer.mozilla.org/pt-BR/docs/Aprender/JavaScript/Objetos/B%C3%A1sico
 - Clean Code
+
+
+
