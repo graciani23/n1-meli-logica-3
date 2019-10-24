@@ -102,53 +102,53 @@ console.log(menorQ10.length)
 
 
 //5 -
-// const mulheres = [
-//   {
-//     user: 234,
-//     name: "Marcia",
-//     idade: 40,
-//     hobbies: ["estudar", "comer", "falar"]
-//   },
-//   {
-//     user: 235,
-//     name: "Lorena",
-//     idade: 20,
-//     hobbies: ["dançar", "assistir tv", "estudar"]
-//   },
-//   {
-//     user: 236,
-//     name: "Patricia",
-//     idade: 24,
-//     hobbies: ["correr", "acampar", "surfar"]
-//   },
-//   {
-//     user: 237,
-//     name: "Mariana",
-//     idade: 15,
-//     hobbies: ["skate", "bicicleta", "break dance"]
-//   },
-//   {
-//     user: 238,
-//     name: "Isis",
-//     idade: 34,
-//     hobbies: ["ler", "estudar", "discutir"]
-//   },
-//   {
-//     user: 239,
-//     name: "Pietra",
-//     idade: 23,
-//     hobbies: ["jogar dominó", "sinuca", "cartas"]
-//   }
-// ]
+const mulheres = [
+  {
+    user: 234,
+    name: "Marcia",
+    idade: 40,
+    hobbies: ["estudar", "comer", "falar"]
+  },
+  {
+    user: 235,
+    name: "Lorena",
+    idade: 20,
+    hobbies: ["dançar", "assistir tv", "estudar"]
+  },
+  {
+    user: 236,
+    name: "Patricia",
+    idade: 24,
+    hobbies: ["correr", "acampar", "surfar"]
+  },
+  {
+    user: 237,
+    name: "Mariana",
+    idade: 15,
+    hobbies: ["skate", "bicicleta", "break dance"]
+  },
+  {
+    user: 238,
+    name: "Isis",
+    idade: 34,
+    hobbies: ["ler", "estudar", "discutir"]
+  },
+  {
+    user: 239,
+    name: "Pietra",
+    idade: 23,
+    hobbies: ["jogar dominó", "sinuca", "cartas"]
+  }
+]
 
-// // retore a mulher que tiver o user = 238
-// const achada = mulheres.find(item => item.user === 238)
-// console.log(achada.name)
-// // retorne o nome das mulheres que gostam de estudar
+// retore a mulher que tiver o user = 238
+const achada = mulheres.find(item => item.user === 238)
+console.log(achada.name)
+// retorne o nome das mulheres que gostam de estudar
 
-//  const estudiosas = mulheres.filter(item => item.hobbies.indexOf('estudar') > -1) 
-//  console.log(estudiosas.name)
+ const estudiosas = mulheres.filter(item => item.hobbies.indexOf('estudar') > -1) 
+ console.log(estudiosas.name)
 
-//  estudiosas.map(item => {
-//      console.log(item.name)
-//  })
+ estudiosas.map(item => {
+     console.log(item.name)
+ })
